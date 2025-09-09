@@ -80,6 +80,7 @@ export function makeContactForm(element) {
 }
 
 export function setupContactForm() {
+	/*
   const form = document.getElementById("contact-form");
   const successMessage = document.querySelector(".success-message");
 
@@ -90,4 +91,5 @@ export function setupContactForm() {
     form.reset();
     setTimeout(() => successMessage.classList.remove("visible"), 5000);
   });
+  */
 }
