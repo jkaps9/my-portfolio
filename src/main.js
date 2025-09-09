@@ -5,6 +5,8 @@ import {
   setupContactForm,
 } from "./components/contact-form.js";
 
+import { makePortfolio } from "./components/portfolio.js";
+
 document.querySelector("#app").innerHTML = `
 <header id="header">
 </header>
@@ -16,7 +18,7 @@ document.querySelector("#app").innerHTML = `
       <a href="#portfolio">Explore portfolio</a>
     </div>
   </section>
-  <section id="porfolio"></section>
+  <section id="portfolio"></section>
   <section id="contact"></section>
 </main>
 `;
@@ -24,3 +26,5 @@ document.querySelector("#app").innerHTML = `
 makeHeader(document.querySelector("#header"));
 makeContactForm(document.querySelector("#contact"));
 setupContactForm();
+
+makePortfolio(document.querySelector("#portfolio"));

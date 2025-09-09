@@ -1,0 +1,24 @@
+.project-card {
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-box-shadow);
+  overflow: hidden;
+  max-width: 360px;
+
+  .project-screenshot img {
+    max-height: 12rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    padding: 1rem 2rem;
+  }
+}
+
+#portfolio > .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  place-items: center;
+  gap: 1rem;
+}
