@@ -23,6 +23,16 @@ header > .container {
 }
 
 .nav__link {
+  font-size: 1.2rem;
   text-decoration: none;
   color: inherit;
+
+  &:hover {
+    border-bottom: 1px solid var(--primary-color-light);
+  }
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: var(--primary-color-dark);
 }
