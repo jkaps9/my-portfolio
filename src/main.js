@@ -12,6 +12,8 @@ document.querySelector("#app").innerHTML = `
       <a href="#portfolio">Explore portfolio</a>
     </div>
   </section>
+  <section id="porfolio"></section>
+  <section id="contact"></section>
 </main>
 `;
 
