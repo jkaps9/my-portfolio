@@ -17,6 +17,7 @@ h2 {
 
 label {
   font: inherit;
+  font-size: clamp(1rem, 0.895rem + 0.4479vw, 1.25rem);
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -104,7 +105,7 @@ button {
   cursor: pointer;
 
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: clamp(1rem, 0.895rem + 0.4479vw, 1.25rem);
   line-height: 150%;
 }
 

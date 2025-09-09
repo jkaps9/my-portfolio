@@ -19,7 +19,7 @@ export function makePortfolio(element) {
             ${makeProjectCard(
               officeliteImg,
               "officelite screenshot",
-              "Officelite | Coming Soon",
+              "Officelite",
               "Website for an upcoming software release",
               "https://jkaps9.github.io/officelite-coming-soon/"
             )}
