@@ -24,7 +24,7 @@ header > .container {
 }
 
 .nav__link {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
   text-decoration: none;
   color: inherit;
 
@@ -34,6 +34,6 @@ header > .container {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
   color: var(--primary-color-dark);
 }
