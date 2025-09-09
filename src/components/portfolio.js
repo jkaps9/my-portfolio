@@ -4,24 +4,27 @@ import placeholderImg from "../assets/images/placeholder_screenshot.png";
 export function makePortfolio(element) {
   element.innerHTML = `
     <div class="container">
-        ${makeProjectCard(
-          placeholderImg,
-          "project screenshot",
-          "Project Title",
-          "Project description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tempora."
-        )}
-        ${makeProjectCard(
-          placeholderImg,
-          "project screenshot",
-          "Project Title",
-          "Project description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tempora."
-        )}
-        ${makeProjectCard(
-          placeholderImg,
-          "project screenshot",
-          "Project Title",
-          "Project description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tempora."
-        )}
+        <h2>Portfolio</h2>
+        <div class="card-container">
+            ${makeProjectCard(
+              placeholderImg,
+              "project screenshot",
+              "Project Title",
+              "Project description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tempora."
+            )}
+            ${makeProjectCard(
+              placeholderImg,
+              "project screenshot",
+              "Project Title",
+              "Project description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tempora."
+            )}
+            ${makeProjectCard(
+              placeholderImg,
+              "project screenshot",
+              "Project Title",
+              "Project description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tempora."
+            )}
+        </div>
     </div>
    `;
 }
