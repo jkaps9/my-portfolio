@@ -4,7 +4,7 @@ export function makeContactForm(element) {
   element.innerHTML = `
    <div class="container">
       <h2>Contact Me</h2>
-      <form id="contact-form">
+      <form id="contact-form" method="POST" data-netlify="true">
         <div class="success-message">
           <div class="title">
             <img src="assets/images/icon-success-check.svg" alt="" />
