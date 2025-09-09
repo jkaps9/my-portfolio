@@ -3,7 +3,7 @@ import "../styles/contact-form.css";
 export function makeContactForm(element) {
   element.innerHTML = `
    <div class="container">
-      <h2>Contact</h2>
+      <h2>Contact Me</h2>
       <form id="contact-form">
         <div class="success-message">
           <div class="title">
