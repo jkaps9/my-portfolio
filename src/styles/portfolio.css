@@ -5,6 +5,7 @@
   overflow: hidden;
   max-width: 360px;
   position: relative;
+  transition: all 0.3s ease;
 
   .project-link {
     position: absolute;
@@ -19,6 +20,7 @@
     max-height: 12rem;
     width: 100%;
     object-fit: cover;
+    object-position: top;
   }
 
   .content {
@@ -27,6 +29,15 @@
     flex-direction: column;
     gap: 1rem;
   }
+}
+
+.project-card:hover {
+  box-shadow: var(--card-box-shadow-hover);
+  transform: translateY(-2%);
+}
+
+.project-card:active {
+  box-shadow: var(--card-box-shadow-active);
 }
 
 #portfolio .card-container {
