@@ -1,6 +1,8 @@
 import "../styles/portfolio.css";
 import placeholderImg from "../assets/images/placeholder_screenshot.png";
 import weatherApplicationImg from "../assets/images/weather-application_screenshot.png";
+import officeliteImg from "../assets/images/officelite_screenshot.png";
+import equalizerImg from "../assets/images/equalizer_screenshot.png";
 
 export function makePortfolio(element) {
   element.innerHTML = `
@@ -11,26 +13,29 @@ export function makePortfolio(element) {
               weatherApplicationImg,
               "weather application screenshot",
               "Weather Now",
-              "Weather application using the Open-Meteo API."
+              "Weather application using the Open-Meteo API",
+              "https://jkaps9.github.io/weather-application/"
             )}
             ${makeProjectCard(
-              placeholderImg,
-              "project screenshot",
-              "Project Title",
-              "Project description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tempora."
+              officeliteImg,
+              "officelite screenshot",
+              "Officelite | Coming Soon",
+              "Website for an upcoming software release",
+              "https://jkaps9.github.io/officelite-coming-soon/"
             )}
             ${makeProjectCard(
-              placeholderImg,
-              "project screenshot",
-              "Project Title",
-              "Project description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, tempora."
+              equalizerImg,
+              "equalizer screenshot",
+              "Equalizer",
+              "Landing page for a system audio equalizer mobile application.",
+              "https://jkaps9.github.io/equalizer-landing-page/"
             )}
         </div>
     </div>
    `;
 }
 
-function makeProjectCard(imgUrl, imgAltText, title, description) {
+function makeProjectCard(imgUrl, imgAltText, title, description, projectUrl) {
   return `<div class="project-card">
             <div class="project-screenshot">
                 <img src="${imgUrl}" alt="${imgAltText}">
@@ -39,6 +44,6 @@ function makeProjectCard(imgUrl, imgAltText, title, description) {
                 <h3 class="project-title">${title}</h3>
                 <p class="project-description">${description}</p>
             </div>
-            <a href="https://jkaps9.github.io/weather-application/" target="_blank" class="project-link"></a>
+            <a href="${projectUrl}" target="_blank" class="project-link"></a>
         </div>`;
 }
