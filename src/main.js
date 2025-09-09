@@ -7,7 +7,9 @@ document.querySelector("#app").innerHTML = `
 <main>
   <section id="hero">
     <div class="container">
-      <h1>Welcome</h1>
+      <h1>I craft digital experiences that captivate and convert</h1>
+      <p>Web designer and developer creating beautiful, and thoughtful websites.</p>
+      <a href="#portfolio">Explore portfolio</a>
     </div>
   </section>
 </main>
