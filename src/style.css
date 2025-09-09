@@ -30,6 +30,12 @@
 body {
   min-height: 100vh;
   background-color: #fafafa;
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--primary-color-dark);
 }
 
 img {
