@@ -4,6 +4,16 @@
   box-shadow: var(--card-box-shadow);
   overflow: hidden;
   max-width: 360px;
+  position: relative;
+
+  .project-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
 
   .project-screenshot img {
     max-height: 12rem;
@@ -22,6 +32,6 @@
 #portfolio .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  place-items: center;
+  justify-items: center;
   gap: 1rem;
 }
