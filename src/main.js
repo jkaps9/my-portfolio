@@ -25,10 +25,14 @@ document.querySelector("#app").innerHTML = `
       </div>
     </header>
 <main>
+<section class="hero">
+            <div class="container">
     <h1>Welcome</h1>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
+    </div>
+    </section>
 </main>
 `;
 
