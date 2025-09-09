@@ -9,6 +9,7 @@ h2 {
   margin-right: auto;
   background: #fff;
   border-radius: var(--border-radius);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: clamp(1.5rem, 0.5458rem + 4.0712vw, 2.5rem);
   display: grid;
   grid-template-columns: 1fr;
@@ -46,7 +47,7 @@ textarea {
 }
 
 textarea {
-  height: calc(3lh + 1.4em); /* 3 line heights + vertical padding */
+  min-height: calc(3lh + 1.4em); /* 3 line heights + vertical padding */
   resize: block;
 }
 
