@@ -26,24 +26,3 @@ body {
   margin: 0 auto;
   width: 80%;
 }
-
-header {
-  padding: 1rem 0 2rem;
-}
-
-header > .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav__list {
-  list-style: none;
-  display: flex;
-  gap: 1em;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: inherit;
-}
