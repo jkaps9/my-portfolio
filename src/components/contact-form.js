@@ -65,8 +65,8 @@ export function makeContactForm(element) {
 
         <div class="form-group span-all consent-row">
           <input type="checkbox" id="consent" name="consent" required />
-          <label for="consent" class="consent-label"
-            >I consent to being contacted by Josh
+          <label for="consent" class="consent-label">
+          I consent to being contacted
           </label>
           <div class="error-message span-all">
             To submit this form, please consent to being contacted
