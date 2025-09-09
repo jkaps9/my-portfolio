@@ -4,7 +4,7 @@ export function makeHeader(element) {
   element.innerHTML = `
     <div class="container">
         <div class="logo">
-          <p>Josh Kaplan</p>
+          <p>Josh F Kaplan</p>
         </div>
         <nav class="nav">
           <ul class="nav__list">
