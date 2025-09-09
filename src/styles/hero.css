@@ -1,5 +1,6 @@
 #hero {
   padding: clamp(4rem, 2.9437rem + 4.507vw, 7rem) 0;
+  background: linear-gradient(to right, #fafafa, #ececec);
 }
 
 #hero > .container {
