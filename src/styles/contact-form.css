@@ -9,7 +9,7 @@ h2 {
   margin-right: auto;
   background: #fff;
   border-radius: var(--border-radius);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: var(--card-box-shadow);
   padding: clamp(1.5rem, 0.5458rem + 4.0712vw, 2.5rem);
   display: grid;
   grid-template-columns: 1fr;
