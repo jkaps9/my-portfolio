@@ -1,0 +1,10 @@
+footer {
+  padding: 3rem 0;
+  background-color: var(--primary-color-dark);
+  color: #fafafa;
+}
+
+footer > .container {
+  display: flex;
+  justify-content: space-between;
+}
