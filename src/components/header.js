@@ -1,6 +1,6 @@
 import "../styles/header.css";
 
-export function setupHeader(element) {
+export function makeHeader(element) {
   element.innerHTML = `
     <div class="container">
         <div class="logo">

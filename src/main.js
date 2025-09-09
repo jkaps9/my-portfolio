@@ -1,5 +1,5 @@
 import "./style.css";
-import { setupHeader } from "./components/header.js";
+import { makeHeader } from "./components/header.js";
 import {
   makeContactForm,
   setupContactForm,
@@ -21,6 +21,6 @@ document.querySelector("#app").innerHTML = `
 </main>
 `;
 
-setupHeader(document.querySelector("#header"));
+makeHeader(document.querySelector("#header"));
 makeContactForm(document.querySelector("#contact"));
 setupContactForm();
