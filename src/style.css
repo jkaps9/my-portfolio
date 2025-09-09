@@ -34,6 +34,10 @@ img {
   max-width: 100%;
 }
 
+section {
+  padding: clamp(2rem, 1.5801rem + 1.7917vw, 3rem) 0;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
