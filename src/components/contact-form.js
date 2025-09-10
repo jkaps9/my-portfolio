@@ -74,20 +74,20 @@ export function makeContactForm(element) {
 }
 
 export function setupContactForm() {
-  //   <div class="success-message">
-  //   <div class="title">
-  //     <img src="assets/images/icon-success-check.svg" alt="" />
-  //     <h2>Message Sent!</h2>
-  //   </div>
-  //   <p>Thanks for completing the form. We'll be in touch soon!</p>
-  // </div>
-  // const form = document.getElementById("contact-form");
-  // const successMessage = document.querySelector(".success-message");
+  const form = document.getElementById("contact-form");
+
   // Form submission handler
-  // form.addEventListener("submit", function (event) {
-  // event.preventDefault();
-  //   successMessage.classList.add("visible");
-  // form.reset();
-  //   setTimeout(() => successMessage.classList.remove("visible"), 5000);
-  // });
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const myFrom = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
+  });
 }
