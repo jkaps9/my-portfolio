@@ -66,7 +66,7 @@ export function makeContactForm(element) {
           </div>
         </div>
 
-        <input class="span-all" type="submit">Submit</input>
+        <input class="span-all" type="submit"></input>
       </form>
     </div>
       `;
