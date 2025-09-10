@@ -15,6 +15,3 @@
 [build.processing.js]
   bundle = true
   minify = true
-
-[[plugins]]
-  package = "@netlify/plugin-functions"
