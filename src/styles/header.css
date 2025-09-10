@@ -3,14 +3,6 @@ header {
   background: linear-gradient(to right, #fafafa, #ececec);
 }
 
-header.sticky {
-  position: sticky;
-  top: 0;
-  background-color: #fafafa;
-  z-index: 2;
-  box-shadow: 0 4px 8px -8px gray;
-}
-
 header > .container {
   display: flex;
   justify-content: space-between;
@@ -46,6 +38,7 @@ header > .container {
 
 #dark-mode-toggle {
   display: block;
+  background: transparent;
   border: none;
   display: flex;
   flex-direction: column;
