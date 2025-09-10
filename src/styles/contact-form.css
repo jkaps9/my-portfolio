@@ -30,7 +30,7 @@ textarea {
   cursor: pointer;
 }
 
-input,
+input:not([type="submit"]),
 textarea {
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
@@ -94,7 +94,7 @@ input[type="checkbox"] {
 }
 
 /* Submit Button */
-button {
+input[type="submit"] {
   appearance: none;
   background: var(--primary-color);
   color: #ffffff;
@@ -107,10 +107,10 @@ button {
   font-weight: 700;
   font-size: clamp(1rem, 0.895rem + 0.4479vw, 1.25rem);
   line-height: 150%;
-}
 
-button:hover {
-  background-color: var(--primary-color-dark);
+  &:hover {
+    background-color: var(--primary-color-dark);
+  }
 }
 
 /* Error state */
@@ -118,6 +118,7 @@ button:hover {
   padding-top: 0.25rem;
   color: #ff0000;
   display: none;
+  font-size: clamp(1rem, 0.895rem + 0.4479vw, 1.25rem);
 }
 
 .form-group:has(input:user-invalid),

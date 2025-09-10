@@ -4,14 +4,7 @@ export function makeContactForm(element) {
   element.innerHTML = `
    <div class="container">
       <h2>Contact Me</h2>
-      <form id="contact-form" method="POST" data-netlify="true">
-        <div class="success-message">
-          <div class="title">
-            <img src="assets/images/icon-success-check.svg" alt="" />
-            <h2>Message Sent!</h2>
-          </div>
-          <p>Thanks for completing the form. We'll be in touch soon!</p>
-        </div>
+      <form id="contact-form" name="contact" method="post" data-netlify="true">
         <div class="form-group">
           <label for="first-name">First Name</label>
           <input
@@ -73,23 +66,27 @@ export function makeContactForm(element) {
           </div>
         </div>
 
-        <button class="span-all" type="submit">Submit</button>
+        <input class="span-all" type="submit">Submit</input>
       </form>
     </div>
       `;
 }
 
 export function setupContactForm() {
-	/*
+  //   <div class="success-message">
+  //   <div class="title">
+  //     <img src="assets/images/icon-success-check.svg" alt="" />
+  //     <h2>Message Sent!</h2>
+  //   </div>
+  //   <p>Thanks for completing the form. We'll be in touch soon!</p>
+  // </div>
   const form = document.getElementById("contact-form");
-  const successMessage = document.querySelector(".success-message");
-
+  // const successMessage = document.querySelector(".success-message");
   // Form submission handler
   form.addEventListener("submit", function (event) {
     event.preventDefault();
-    successMessage.classList.add("visible");
+    //   successMessage.classList.add("visible");
     form.reset();
-    setTimeout(() => successMessage.classList.remove("visible"), 5000);
+    //   setTimeout(() => successMessage.classList.remove("visible"), 5000);
   });
-  */
 }
