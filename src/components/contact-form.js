@@ -67,6 +67,7 @@ export function makeContactForm(element) {
         </div>
 
         <input class="span-all" type="submit"></input>
+        <input type="hidden" name="form-name" value="contact" />
       </form>
     </div>
       `;
@@ -80,13 +81,13 @@ export function setupContactForm() {
   //   </div>
   //   <p>Thanks for completing the form. We'll be in touch soon!</p>
   // </div>
-  const form = document.getElementById("contact-form");
+  // const form = document.getElementById("contact-form");
   // const successMessage = document.querySelector(".success-message");
   // Form submission handler
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    //   successMessage.classList.add("visible");
-    form.reset();
-    //   setTimeout(() => successMessage.classList.remove("visible"), 5000);
-  });
+  // form.addEventListener("submit", function (event) {
+  // event.preventDefault();
+  //   successMessage.classList.add("visible");
+  // form.reset();
+  //   setTimeout(() => successMessage.classList.remove("visible"), 5000);
+  // });
 }
