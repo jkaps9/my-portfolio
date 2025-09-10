@@ -82,6 +82,7 @@ export function makeContactForm(element) {
 
 export function setupContactForm() {
   const form = document.getElementById("contact-form");
+  const successMessage = document.querySelector(".success-message");
   // Form submission handler
   form.addEventListener("submit", function (e) {
     e.preventDefault();
