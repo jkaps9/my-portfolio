@@ -37,3 +37,19 @@ header > .container {
   font-size: clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
   color: var(--primary-color-dark);
 }
+
+.nav__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dark-mode-toggle {
+  display: block;
+  border: none;
+
+  img {
+    max-height: 28px;
+    max-width: 28px;
+  }
+}
