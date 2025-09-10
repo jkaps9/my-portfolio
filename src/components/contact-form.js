@@ -4,7 +4,8 @@ export function makeContactForm(element) {
   element.innerHTML = `
    <div class="container">
       <h2>Contact Me</h2>
-      <form id="contact-form" name="contact" method="POST" data-netlify="true">
+      <form id="contact-form" name="contact">
+      <input type="hidden" name="form-name" value="contact" />
         <div class="form-group">
           <label for="first-name">First Name</label>
           <input
@@ -67,7 +68,6 @@ export function makeContactForm(element) {
         </div>
 
         <input class="span-all" type="submit"></input>
-        <input type="hidden" name="form-name" value="contact" />
       </form>
     </div>
       `;
@@ -77,10 +77,10 @@ export function setupContactForm() {
   const form = document.getElementById("contact-form");
 
   // Form submission handler
-  form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    const myFrom = event.target;
-    const formData = new FormData(myForm);
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
 
     fetch("/", {
       method: "POST",
