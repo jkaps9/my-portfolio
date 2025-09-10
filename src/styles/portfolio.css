@@ -45,3 +45,19 @@
   justify-items: center;
   gap: 1rem;
 }
+
+body.dark {
+  .project-card {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    box-shadow: var(--card-box-shadow-light);
+  }
+
+  .project-card:hover {
+    box-shadow: var(--card-box-shadow-hover-light);
+  }
+
+  .project-card:active {
+    box-shadow: var(--card-box-shadow-active-light);
+  }
+}

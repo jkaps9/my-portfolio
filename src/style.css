@@ -16,14 +16,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --primary-color: hsl(240, 100%, 50%);
+  --primary-color: hsl(240, 89%, 47%);
   --primary-color-light: hsl(240, 100%, 75%);
   --primary-color-dark: hsl(240, 100%, 25%);
+  --primary-color-very-dark: hsl(240, 100%, 15%);
+
+  --accent-color: hsl(332, 100%, 35%);
+  --accent-color-dark: hsl(332, 100%, 30%);
 
   --light-gray: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 71%);
 
   --white: #fff;
   --red: #ff0000;
+  --yellow: #feff00;
 
   --light-bg-color: var(--light-gray);
   --light-bg-linear-gradient: linear-gradient(
@@ -32,11 +38,22 @@
     #ececec
   );
 
+  --dark-bg-linear-gradient: linear-gradient(
+    to bottom right,
+    var(--primary-color),
+    var(--primary-color-dark)
+  );
+
   --border-radius: 0.75rem;
   --border-color: #cccccc;
+
   --card-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   --card-box-shadow-hover: rgba(99, 99, 99, 0.2) 2px 6px 8px 0px;
   --card-box-shadow-active: rgba(99, 99, 99, 0.2) 0px 0px 8px 0px;
+
+  --card-box-shadow-light: rgba(156, 156, 156, 0.2) 0px 2px 8px 0px;
+  --card-box-shadow-hover-light: rgba(156, 156, 156, 0.2) 2px 6px 8px 0px;
+  --card-box-shadow-active-light: rgba(156, 156, 156, 0.2) 0px 0px 8px 0px;
 }
 
 html {
@@ -45,8 +62,17 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: #fafafa;
+  background-color: var(--light-gray);
   font-size: 1.25rem;
+}
+
+body.dark {
+  background-color: var(--primary-color-dark);
+  color: var(--light-gray);
+
+  h2 {
+    color: var(--light-gray);
+  }
 }
 
 h2 {

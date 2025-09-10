@@ -33,3 +33,23 @@
     background-color: var(--primary-color-dark);
   }
 }
+
+body.dark {
+  #hero {
+    background: var(--primary-color);
+  }
+
+  .hero__title {
+    color: var(--light-gray);
+  }
+
+  .hero__link {
+    color: var(--light-gray);
+    border-color: var(--light-gray);
+
+    &:hover {
+      background-color: var(--light-gray);
+      color: var(--primary-color-dark);
+    }
+  }
+}

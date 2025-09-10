@@ -4,10 +4,11 @@ h2 {
 
 /* General Form Styles */
 #contact-form {
+  accent-color: var(--accent-color);
   position: relative;
   max-width: 45rem;
   margin-right: auto;
-  background: var(--white);
+  background: var(--light-gray);
   border-radius: var(--border-radius);
   box-shadow: var(--card-box-shadow);
   padding: clamp(1.5rem, 0.5458rem + 4.0712vw, 2.5rem);
@@ -126,6 +127,7 @@ input[type="submit"] {
   input,
   textarea {
     border-color: var(--red);
+    outline: 1px solid var(--red);
   }
 
   .error-message {
@@ -164,6 +166,38 @@ input[type="submit"] {
     h2 {
       color: var(--light-gray);
       font-size: 1.125rem;
+    }
+  }
+}
+
+body.dark {
+  #contact-form {
+    background-color: var(--primary-color);
+  }
+  input[type="submit"] {
+    background-color: var(--accent-color);
+
+    &:hover {
+      background-color: var(--accent-color-dark);
+    }
+  }
+
+  .error-message {
+    color: var(--yellow);
+  }
+
+  .form-group:has(input:user-invalid),
+  .form-group:has(textarea:user-invalid) {
+    input,
+    textarea {
+      outline: 2px solid var(--yellow);
+      border-color: var(--yellow);
+    }
+  }
+
+  .form-group:has([required]) label {
+    &::after {
+      color: var(--yellow);
     }
   }
 }
