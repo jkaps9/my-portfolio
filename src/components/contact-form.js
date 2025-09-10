@@ -4,7 +4,7 @@ export function makeContactForm(element) {
   element.innerHTML = `
    <div class="container">
       <h2>Contact Me</h2>
-      <form id="contact-form" name="contact">
+      <form id="contact-form" name="contact" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact" />
         <div class="form-group">
           <label for="first-name">First Name</label>
@@ -74,20 +74,17 @@ export function makeContactForm(element) {
 }
 
 export function setupContactForm() {
-  const form = document.getElementById("contact-form");
-
+  // const form = document.getElementById("contact-form");
   // Form submission handler
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const formData = new FormData(this);
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => console.log("Form successfully submitted"))
-      .catch((error) => alert(error));
-  });
+  // form.addEventListener("submit", function (e) {
+  //   e.preventDefault();
+  //   const formData = new FormData(this);
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: new URLSearchParams(formData).toString(),
+  //   })
+  //     .then(() => console.log("Form successfully submitted"))
+  //     .catch((error) => alert(error));
+  // });
 }
