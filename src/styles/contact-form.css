@@ -160,6 +160,7 @@ input[type="submit"] {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    color: #ffffff;
     margin-bottom: 0.5rem;
     h2 {
       font-size: 1.125rem;
