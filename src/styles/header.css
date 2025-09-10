@@ -1,6 +1,6 @@
 header {
   padding: 1rem 0 2rem;
-  background: linear-gradient(to right, #fafafa, #ececec);
+  background: var(--light-bg-linear-gradient);
 }
 
 header > .container {

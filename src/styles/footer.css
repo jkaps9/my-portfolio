@@ -2,7 +2,7 @@ footer {
   margin-top: 2rem;
   padding: 3rem 0;
   background-color: var(--primary-color-dark);
-  color: #fafafa;
+  color: var(--light-gray);
 }
 
 footer > .container {

@@ -20,6 +20,18 @@
   --primary-color-light: hsl(240, 100%, 75%);
   --primary-color-dark: hsl(240, 100%, 25%);
 
+  --light-gray: hsl(0, 0%, 98%);
+
+  --white: #fff;
+  --red: #ff0000;
+
+  --light-bg-color: var(--light-gray);
+  --light-bg-linear-gradient: linear-gradient(
+    to right,
+    var(--light-bg-color),
+    #ececec
+  );
+
   --border-radius: 0.75rem;
   --border-color: #cccccc;
   --card-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
