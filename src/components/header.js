@@ -19,3 +19,16 @@ export function makeHeader(element) {
       </div>
       `;
 }
+
+export function setupHeader() {
+  const darkModeToggleButton = document.querySelector("#dark-mode-toggle");
+  const body = document.querySelector("body");
+  darkModeToggleButton.addEventListener("click", () => {
+    if (body.classList.contains("dark")) {
+      darkModeToggleButton.innerHTML = `<img src="${darkModeImg}" alt="dark mode image">`;
+    } else {
+      darkModeToggleButton.innerHTML = `<img src="${lightModeImg}" alt="dark mode image">`;
+    }
+    body.classList.toggle("dark");
+  });
+}
