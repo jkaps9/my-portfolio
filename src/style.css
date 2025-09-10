@@ -39,8 +39,9 @@
   );
 
   --dark-bg-linear-gradient: linear-gradient(
-    to bottom right,
-    var(--primary-color),
+    to bottom,
+    var(--primary-color-dark),
+    var(--primary-color) 50%,
     var(--primary-color-dark)
   );
 
@@ -69,7 +70,6 @@ body {
 body.dark {
   background-color: var(--primary-color-dark);
   color: var(--light-gray);
-
   h2 {
     color: var(--light-gray);
   }

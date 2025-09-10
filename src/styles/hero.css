@@ -36,7 +36,7 @@
 
 body.dark {
   #hero {
-    background: var(--primary-color);
+    background-image: var(--dark-bg-linear-gradient);
   }
 
   .hero__title {
@@ -48,8 +48,8 @@ body.dark {
     border-color: var(--light-gray);
 
     &:hover {
-      background-color: var(--light-gray);
-      color: var(--primary-color-dark);
+      background-color: var(--accent-color);
+      border-color: var(--accent-color);
     }
   }
 }
