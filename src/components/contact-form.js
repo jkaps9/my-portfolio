@@ -4,7 +4,7 @@ export function makeContactForm(element) {
   element.innerHTML = `
    <div class="container">
       <h2>Contact Me</h2>
-      <form id="contact-form" name="contact" method="POST" netlify>
+      <form id="contact-form" name="contact" method="POST" data-netlify="true">
         <div class="form-group">
           <label for="first-name">First Name</label>
           <input
