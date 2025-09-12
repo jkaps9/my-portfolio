@@ -14,21 +14,21 @@ export function makePortfolio(element) {
               "weather application screenshot",
               "Weather Now",
               "Weather application using the Open-Meteo API",
-              "https://jkaps9.github.io/weather-application/",
+              "https://jkaps9.github.io/weather-application/"
             )}
             ${makeProjectCard(
               officeliteImg,
               "officelite screenshot",
               "Officelite",
               "Website for an upcoming software release",
-              "https://jkaps9.github.io/officelite-coming-soon/",
+              "https://jkaps9.github.io/officelite-coming-soon/"
             )}
             ${makeProjectCard(
               equalizerImg,
               "equalizer screenshot",
               "Equalizer",
               "Landing page for a system audio equalizer mobile application.",
-              "https://jkaps9.github.io/equalizer-landing-page/",
+              "https://jkaps9.github.io/equalizer-landing-page/"
             )}
         </div>
     </div>
@@ -44,6 +44,6 @@ function makeProjectCard(imgUrl, imgAltText, title, description, projectUrl) {
                 <h3 class="project-title">${title}</h3>
                 <p class="project-description">${description}</p>
             </div>
-            <a href="${projectUrl}" target="_blank" class="project-link"></a>
+            <a href="${projectUrl}" target="_blank" class="project-link" aria-label="${imgAltText}">${projectUrl}</a>
         </div>`;
 }
