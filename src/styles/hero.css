@@ -23,14 +23,14 @@
 .hero__link {
   font-size: clamp(1.125rem, 0.993rem + 0.5634vw, 1.5rem);
   text-decoration: none;
-  color: var(--primary-color-dark);
-  border: 1px solid var(--primary-color-dark);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
   padding: 0.5em 1em;
   border-radius: var(--border-radius);
 
   &:hover {
     color: var(--light-gray);
-    background-color: var(--primary-color-dark);
+    background-color: var(--accent-color);
   }
 }
 
@@ -44,12 +44,11 @@ body.dark {
   }
 
   .hero__link {
+    background-color: var(--accent-color);
     color: var(--light-gray);
-    border-color: var(--light-gray);
 
     &:hover {
-      background-color: var(--accent-color);
-      border-color: var(--accent-color);
+      background-color: var(--accent-color-dark);
     }
   }
 }

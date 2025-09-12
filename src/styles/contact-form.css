@@ -40,11 +40,11 @@ textarea {
   height: 3rem;
 
   &:focus-visible {
-    outline-color: var(--primary-color);
+    outline-color: var(--accent-color);
   }
 
   &:hover {
-    border-color: var(--primary-color);
+    border-color: var(--accent-color);
   }
 }
 
@@ -68,7 +68,7 @@ textarea {
 
   &::after {
     content: "*";
-    color: var(--primary-color);
+    color: var(--accent-color);
   }
 }
 
@@ -97,7 +97,7 @@ input[type="checkbox"] {
 /* Submit Button */
 input[type="submit"] {
   appearance: none;
-  background: var(--primary-color);
+  background: var(--accent-color);
   color: var(--light-gray);
   border: none;
   border-radius: 5px;
@@ -110,7 +110,7 @@ input[type="submit"] {
   line-height: 150%;
 
   &:hover {
-    background-color: var(--primary-color-dark);
+    background-color: var(--accent-color-dark);
   }
 }
 
@@ -172,33 +172,8 @@ input[type="submit"] {
 
 body.dark {
   #contact-form {
-    background-color: var(--primary-color);
-  }
-  input[type="submit"] {
-    background-color: var(--accent-color);
-
-    &:hover {
-      background-color: var(--accent-color-dark);
-    }
-  }
-
-  .error-message {
-    color: var(--yellow);
-  }
-
-  .form-group:has(input:user-invalid),
-  .form-group:has(textarea:user-invalid) {
-    input,
-    textarea {
-      outline: 2px solid var(--yellow);
-      border-color: var(--yellow);
-    }
-  }
-
-  .form-group:has([required]) label {
-    &::after {
-      color: var(--yellow);
-    }
+    background-color: var(--primary-color-very-light);
+    color: var(--primary-color-very-dark);
   }
 }
 

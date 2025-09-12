@@ -17,14 +17,16 @@
   -moz-osx-font-smoothing: grayscale;
 
   --primary-color: hsl(240, 89%, 47%);
-  --primary-color-light: hsl(240, 100%, 75%);
-  --primary-color-dark: hsl(240, 100%, 25%);
-  --primary-color-very-dark: hsl(240, 100%, 15%);
+  --primary-color-light: hsl(240, 89%, 75%);
+  --primary-color-very-light: hsl(240, 89%, 95%);
+  --primary-color-dark: hsl(240, 89%, 25%);
+  --primary-color-very-dark: hsl(240, 89%, 15%);
 
   --accent-color: hsl(332, 100%, 35%);
   --accent-color-dark: hsl(332, 100%, 30%);
 
   --light-gray: hsl(0, 0%, 98%);
+  --medium-light-gray: hsl(0, 0%, 85%);
   --medium-gray: hsl(0, 0%, 71%);
 
   --white: #fff;
