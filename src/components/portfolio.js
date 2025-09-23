@@ -13,8 +13,8 @@ export function makePortfolio(element) {
               weatherApplicationImg,
               "weather application screenshot",
               "Weather Now",
-              "Weather application using the Open-Meteo API",
-              "https://jkaps9.github.io/weather-application/"
+              "A user-friendly weather application with an intuitive interface that provides essential weather information in a minimilast format.",
+              "https://weatheryourway.netlify.app/"
             )}
             ${makeProjectCard(
               officeliteImg,
