@@ -16,6 +16,12 @@ h2 {
   grid-template-columns: 1fr;
 }
 
+.hidden-form-field {
+	visibility: hidden;
+	height: 0;
+	position: absolute;
+}
+
 label {
   font: inherit;
   font-size: clamp(1rem, 0.895rem + 0.4479vw, 1.25rem);
