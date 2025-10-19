@@ -14,21 +14,21 @@ export function makePortfolio(element) {
               "weather application screenshot",
               "Weather Now",
               "A user-friendly weather application with an intuitive interface that provides essential weather information in a minimilast format.",
-              "https://weatheryourway.netlify.app/"
+              "https://weatheryourway.netlify.app/",
             )}
             ${makeProjectCard(
               officeliteImg,
               "officelite screenshot",
               "Officelite",
               "Website for an upcoming software release",
-              "https://jkaps9.github.io/officelite-coming-soon/"
+              "https://jkaps9.github.io/officelite-coming-soon/",
             )}
             ${makeProjectCard(
               equalizerImg,
               "equalizer screenshot",
               "Equalizer",
               "Landing page for a system audio equalizer mobile application.",
-              "https://jkaps9.github.io/equalizer-landing-page/"
+              "https://jkaps9.github.io/equalizer-landing-page/",
             )}
         </div>
     </div>

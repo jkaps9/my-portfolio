@@ -4,7 +4,12 @@ export function makeContactForm(element) {
   element.innerHTML = `
    <div class="container">
       <h2>Contact Me</h2>
-      <form id="contact-form" name="contact" method="POST" data-netlify="true">
+      <form id="contact-form" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+      <p class="hidden-form-field">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" type="text" />
+    </label>
+  </p>
       <input type="hidden" name="form-name" value="contact" />
       <div class="success-message">
           <div class="title">
