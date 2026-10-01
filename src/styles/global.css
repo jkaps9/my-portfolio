@@ -169,11 +169,15 @@ html {
 }
 
 body {
+  align-items: stretch;
   background-color: var(--color-background);
   color: var(--color-text);
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 400;
+  justify-content: space-between;
   line-height: 1.6;
   min-height: 100svh;
 }
@@ -238,6 +242,10 @@ p {
   max-width: 65ch;
 }
 
+main {
+  flex: 1;
+}
+
 section {
   padding-block: clamp(var(--space-xl), 2.5915rem + 6.0094vw, var(--space-3xl));
   scroll-margin-top: clamp(
@@ -245,6 +253,12 @@ section {
     2.5915rem + 6.0094vw,
     var(--space-3xl)
   );
+}
+
+footer,
+header {
+  background-color: var(--color-surface);
+  padding-block: clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
 }
 
 /*~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~>
