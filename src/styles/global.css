@@ -52,11 +52,33 @@
   --bp-xl: 1440px;
 }
 
+#sun {
+  display: none;
+}
+
+#moon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 [data-theme="dark"] {
   --color-background: var(--twilight-indigo-dark);
   --color-text: var(--twilight-indigo-light);
   --color-text-header: #ffffff;
   --color-surface: #000000;
+}
+
+:root[data-theme="dark"] {
+  #moon {
+    display: none;
+  }
+
+  #sun {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /*~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~>
