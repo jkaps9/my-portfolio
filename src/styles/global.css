@@ -11,6 +11,7 @@
   --color-background: var(--eggshell);
   --color-surface: #ffffff;
   --color-text: var(--twilight-indigo);
+  --color-border: #b1b3bd;
   --color-text-header: var(--twilight-indigo-dark);
   --color-primary: var(--burnt-peach);
   --color-secondary: var(--muted-teal);
@@ -66,6 +67,7 @@
   --color-background: var(--twilight-indigo-dark);
   --color-text: var(--twilight-indigo-light);
   --color-text-header: #ffffff;
+  --color-border: #313349;
   --color-surface: #000000;
 
   --shadow-sm: 0 1px 4px rgba(255, 255, 255 0.08);
