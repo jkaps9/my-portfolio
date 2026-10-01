@@ -3,14 +3,15 @@
   --eggshell: #f4f1deff;
   --burnt-peach: #e07a5fff;
   --twilight-indigo: #3d405bff;
+  --twilight-indigo-dark: #0c0d12;
+  --twilight-indigo-light: #d8d9de;
   --muted-teal: #81b29aff;
   --apricot-cream: #f2cc8fff;
 
   --color-background: var(--eggshell);
   --color-surface: #ffffff;
   --color-text: var(--twilight-indigo);
-  --color-text-dark: #0c0d12;
-  --color-text-light: #d8d9de;
+  --color-text-header: var(--twilight-indigo-dark);
   --color-primary: var(--burnt-peach);
   --color-secondary: var(--muted-teal);
   --color-tertiary: var(--apricot-cream);
@@ -49,6 +50,13 @@
   --bp-md: 768px;
   --bp-lg: 1024px;
   --bp-xl: 1440px;
+}
+
+[data-theme="dark"] {
+  --color-background: var(--twilight-indigo-dark);
+  --color-text: var(--twilight-indigo-light);
+  --color-text-header: #ffffff;
+  --color-surface: #000000;
 }
 
 /*~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~>
@@ -154,6 +162,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--color-text-header);
   font-family: var(--font-headers);
   font-weight: 700;
   letter-spacing: -0.02em;
