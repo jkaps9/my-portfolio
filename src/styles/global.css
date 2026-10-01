@@ -6,11 +6,20 @@
   --apricot-cream: #f2cc8fff;
 
   --color-background: var(--eggshell);
-  --color-text-primary: var(--twilight-indigo);
+  --color-text: var(--twilight-indigo);
 
   --color-primary: var(--burnt-peach);
   --color-secondary: var(--muted-teal);
   --color-tertiary: var(--apricot-cream);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 /* Skip to main content link - accessible to keyboard users and screen readers */
