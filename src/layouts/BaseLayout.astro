@@ -1,6 +1,7 @@
 ---
 import Meta from "@components/Meta.astro";
-
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
 import "@styles/global.css";
 const { pageTitle, description } = Astro.props;
 ---
@@ -16,5 +17,10 @@ const { pageTitle, description } = Astro.props;
     <a class="skip" aria-label="skip to main content" href="#main">
       Click To Skip To Main Content
     </a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
   </body>
 </html>
