@@ -7,7 +7,7 @@ const getThemePreference = () => {
     : "dark";
 };
 
-const isLight = getThemePreference() === "light";
-if (isLight) {
-  document.documentElement.setAttribute("data-theme", "light");
+const isDark = getThemePreference() === "dark";
+if (isDark) {
+  document.documentElement.setAttribute("data-theme", "dark");
 }
