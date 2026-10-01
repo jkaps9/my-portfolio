@@ -1,4 +1,5 @@
 ---
+import Font from "astro/components/Font.astro";
 import Meta from "@components/Meta.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
@@ -12,6 +13,8 @@ const { pageTitle, description } = Astro.props;
     <Meta>
       <slot name="schema" slot="schema" />
     </Meta>
+    <Font cssVariable="--font-headers" preload />
+    <Font cssVariable="--font-body" preload />
   </head>
   <body>
     <a class="skip" aria-label="skip to main content" href="#main">
