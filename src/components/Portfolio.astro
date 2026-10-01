@@ -1,0 +1,62 @@
+---
+import { Picture } from "astro:assets";
+
+import weatherApplicationImg from "@assets/images/portfolio/weather-application_screenshot.png";
+import officeLiteImg from "@assets/images/portfolio/officelite_screenshot.png";
+import equalizerImg from "@assets/images/portfolio/equalizer_screenshot.png";
+
+const projects = [
+  {
+    image: weatherApplicationImg,
+    imageAltText: "weather application screenshot",
+    title: "Weather Now",
+    description:
+      "A user-friendly weather application with an intuitive interface that provides essential weather information in a minimilast format.",
+    url: "https://weatheryourway.netlify.app/",
+  },
+  {
+    image: officeLiteImg,
+    imageAltText: "officelite screenshot",
+    title: "OfficeLite",
+    description: "Website for an upcoming software release",
+    url: "https://jkaps9.github.io/officelite-coming-soon/",
+  },
+  {
+    image: equalizerImg,
+    imageAltText: "equalizer screenshot",
+    title: "Equalizer",
+    description:
+      "Landing page for a system audio equalizer mobile application.",
+    url: "https://jkaps9.github.io/equalizer-landing-page/",
+  },
+];
+---
+
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <h2>Portfolio</h2>
+    <div class="card-container">
+      {
+        projects.map((project) => (
+          <div class="project__card">
+            <div class="project__screenshot">
+              <Picture src={project.image} alt={project.imageAltText} />
+            </div>
+            <div class="content">
+              <h3 class="project__title">${project.title}</h3>
+              <p class="project__description">${project.description}</p>
+            </div>
+            <a
+              href={project.url}
+              target="_blank"
+              class="project__link"
+              aria-label={project.imageAltText}
+            >
+              ${project.url}
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
