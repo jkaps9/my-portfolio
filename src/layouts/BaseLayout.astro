@@ -12,15 +12,31 @@ const { pageTitle, description } = Astro.props;
 <html lang="en">
   <head>
     <script src="@scripts/theme.js"></script>
-    <Meta title={pageTitle} description={description}>
-      <slot name="schema" slot="schema" />
+    <Meta
+      title={pageTitle}
+      description={description}
+    >
+      <slot
+        name="schema"
+        slot="schema"
+      />
     </Meta>
-    <Font cssVariable="--font-headers" preload />
-    <Font cssVariable="--font-body" preload />
+    <Font
+      cssVariable="--font-headers"
+      preload
+    />
+    <Font
+      cssVariable="--font-body"
+      preload
+    />
     <script src="@scripts/nav.js"></script>
   </head>
   <body>
-    <a class="skip" aria-label="skip to main content" href="#main">
+    <a
+      class="skip"
+      aria-label="skip to main content"
+      href="#main"
+    >
       Click To Skip To Main Content
     </a>
     <Header />

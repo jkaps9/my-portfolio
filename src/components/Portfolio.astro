@@ -18,11 +18,11 @@ const projects = [
     url: "https://weatheryourway.netlify.app/",
   },
   {
-   image: devHorizonImg,
-   imageAltText:"tech conference website screenshot",
-   title:"DevHorizon",
-   description:"An informational site for a technology conference.",
-   url:"https://devhorizon26.netlify.app/"
+    image: devHorizonImg,
+    imageAltText: "tech conference website screenshot",
+    title: "DevHorizon",
+    description: "An informational site for a technology conference.",
+    url: "https://devhorizon26.netlify.app/",
   },
   {
     image: officeLiteImg,
@@ -42,36 +42,47 @@ const projects = [
 ];
 ---
 
-<section id="portfolio" class="portfolio">
+<section
+  id="portfolio"
+  class="portfolio"
+>
   <div class="container">
     <h2>Portfolio</h2>
     <div class="card-container">
-      {
-        projects.map((project) => (
-          <div class="project__card">
-        <div class="project__screenshot">
-          {project.image ? 
-          (<Picture src={project.image} alt={project.imageAltText} />)
-          :
-          (<Picture src={placeholderImg} alt="portfolio piece screenshot" />)
-          }
-            </div>
-            <div class="content">
-              <h3 class="project__title">{project.title}</h3>
-              <p class="project__description">{project.description}</p>
-              <a
-                href={project.url}
-                target="_blank"
-                class="project__link"
-                aria-label={project.imageAltText}
-              >
-                View Full Site
-                <Icon name="icon-new-window" height={16} width={16} />
-              </a>
-            </div>
+      {projects.map((project) => (
+        <div class="project__card">
+          <div class="project__screenshot">
+            {project.image ? (
+              <Picture
+                src={project.image}
+                alt={project.imageAltText}
+              />
+            ) : (
+              <Picture
+                src={placeholderImg}
+                alt="portfolio piece screenshot"
+              />
+            )}
           </div>
-        ))
-      }
+          <div class="content">
+            <h3 class="project__title">{project.title}</h3>
+            <p class="project__description">{project.description}</p>
+            <a
+              href={project.url}
+              target="_blank"
+              class="project__link"
+              aria-label={project.imageAltText}
+            >
+              View Full Site
+              <Icon
+                name="icon-new-window"
+                height={16}
+                width={16}
+              />
+            </a>
+          </div>
+        </div>
+      ))}
     </div>
   </div>
 </section>
