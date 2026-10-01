@@ -4,13 +4,15 @@ import Meta from "@components/Meta.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import "@styles/global.css";
+
 const { pageTitle, description } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <Meta>
+    <script src="@scripts/theme.js"></script>
+    <Meta title={pageTitle} description={description}>
       <slot name="schema" slot="schema" />
     </Meta>
     <Font cssVariable="--font-headers" preload />
