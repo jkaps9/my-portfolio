@@ -16,6 +16,7 @@
   --color-primary: var(--burnt-peach);
   --color-secondary: var(--muted-teal);
   --color-tertiary: var(--apricot-cream);
+  --color-error: #dd1122;
 
   /* Spaces */
   --space-none: 0;
