@@ -26,8 +26,8 @@ addToCartBtns.forEach((btn) => {
 </script>
 <style>
 	.btn--card {
-		background-color: var(--color-surface);
-		border: none;
+		background-color: var(--color-primary);
+		border: 1px solid var(--color-border);
 		color: var(--color-text);
 		margin-top: 1rem;
 		overflow:hidden;
@@ -35,7 +35,6 @@ addToCartBtns.forEach((btn) => {
 		position: relative;
 		&:hover {
 			background-color: var(--color-surface);
-			box-shadow: 4px 4px 0 var(--color-secondary);
 			color: var(--color-secondary);
 			&::before {
 				color: var(--color-text);
@@ -44,12 +43,9 @@ addToCartBtns.forEach((btn) => {
 
 		&::before {
 			content: "✓";
-			// background-color: var(--color-surface);
-			// border-radius: 999px;
 			font-size: 2rem;
 			left: 50%;
 			opacity: 0;
-			// padding: 0rem 0.75rem;
 			position: absolute;
 			top: 50%;
 			transform: translate(-50%, -50%);
