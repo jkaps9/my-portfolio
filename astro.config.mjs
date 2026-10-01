@@ -9,7 +9,7 @@ export default defineConfig({
       provider: fontProviders.fontsource(),
       name: "Anta",
       cssVariable: "--font-headers",
-      weights: [400, 500, 600, 700, 800],
+      weights: [400],
     },
     {
       provider: fontProviders.fontsource(),

@@ -22,6 +22,18 @@ body {
   line-height: 1.6;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-headers);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
 /* Skip to main content link - accessible to keyboard users and screen readers */
 /* https://www.a11y-collective.com/blog/skip-to-main-content/ */
 
