@@ -1,5 +1,6 @@
 ---
 import { Picture } from "astro:assets";
+import { Icon } from "astro-icon/components";
 
 import weatherApplicationImg from "@assets/images/portfolio/weather-application_screenshot.png";
 import officeLiteImg from "@assets/images/portfolio/officelite_screenshot.png";
@@ -51,7 +52,8 @@ const projects = [
                 class="project__link"
                 aria-label={project.imageAltText}
               >
-                {project.url}
+                View Live
+                <Icon name="icon-new-window" height={16} width={16} />
               </a>
             </div>
           </div>
@@ -66,12 +68,36 @@ const projects = [
     background-color: var(--color-surface);
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 360px;
     overflow: hidden;
     transition: all var(--transition);
 
     .project__link {
+      align-items: center;
       color: var(--color-primary);
+      display: flex;
+      font-weight: 500;
+      gap: 0.5rem;
+      line-height: 0;
+      margin-top: auto;
+      position: relative;
+      text-transform: uppercase;
+      width: fit-content;
+
+      &:hover {
+        font-weight: 600;
+        &::after {
+          content: "";
+          background-color: var(--color-primary);
+          height: 2px;
+          position: absolute;
+          bottom: -4px;
+          width: 100%;
+        }
+      }
     }
 
     .project__screenshot img {
@@ -84,7 +110,9 @@ const projects = [
     .content {
       padding: 1.5rem 2.3rem;
       display: flex;
+      flex: 1;
       flex-direction: column;
+
       gap: var(--space-md);
     }
   }
