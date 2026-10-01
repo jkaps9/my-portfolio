@@ -307,6 +307,10 @@ header {
   }
 }
 
+.accent-text {
+  color: var(--color-primary);
+}
+
 /*~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~>
 <~~        Accessibility       ~~>
 <~~ ~~~~~~~~~~~~~~~~~~~~~~~~~~ ~*/
