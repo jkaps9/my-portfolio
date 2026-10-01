@@ -1,4 +1,6 @@
 ---
+import Meta from "@components/Meta.astro";
+
 import "@styles/global.css";
 const { pageTitle, description } = Astro.props;
 ---
@@ -6,9 +8,13 @@ const { pageTitle, description } = Astro.props;
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{pageTitle}</title>
+    <Meta>
+      <slot name="schema" slot="schema" />
+    </Meta>
   </head>
-  <body> </body>
+  <body>
+    <a class="skip" aria-label="skip to main content" href="#main">
+      Click To Skip To Main Content
+    </a>
+  </body>
 </html>
