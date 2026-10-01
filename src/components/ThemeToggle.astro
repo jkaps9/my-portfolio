@@ -1,0 +1,49 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<button id="theme-toggle" class="btn" aria-label="Toggle theme">
+  <div id="moon">
+    <Icon name="icon-moon" height={20} width={20} />
+    <span>Dark</span>
+  </div>
+  <div id="sun">
+    <Icon name="icon-sun" height={20} width={20} />
+    <span>Light</span>
+  </div>
+</button>
+
+<script>
+  const toggleBtn = document.getElementById(
+    "theme-toggle",
+  ) as HTMLButtonElement;
+
+  toggleBtn.addEventListener("click", () => {
+    const root = document.documentElement;
+    const isLight = root.getAttribute("data-theme") === "light";
+
+    if (isLight) {
+      // Switch to Dark (Default)
+      root.removeAttribute("data-theme");
+      localStorage.setItem("theme", "dark");
+    } else {
+      // Switch to Light
+      root.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
+    }
+  });
+</script>
+
+<style>
+  [data-icon="icon-sun"] {
+    color: var(--color-primary);
+  }
+  span {
+    display: none;
+  }
+  @include bp(md) {
+    span {
+      display: block;
+    }
+  }
+</style>

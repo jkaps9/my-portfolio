@@ -9,7 +9,7 @@
       "@data/*": ["./src/data/*"],
       "@styles/*": ["./src/styles/*"],
       "@components/*": ["./src/components/*"],
-      "@js/*": ["./src/js/*"]
+      "@scripts/*": ["./src/scripts/*"]
     }
   }
 }
