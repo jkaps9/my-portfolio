@@ -12,3 +12,26 @@
   --color-secondary: var(--muted-teal);
   --color-tertiary: var(--apricot-cream);
 }
+
+/* Skip to main content link - accessible to keyboard users and screen readers */
+/* https://www.a11y-collective.com/blog/skip-to-main-content/ */
+
+.skip {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  left: -9999px;
+  opacity: 0;
+  padding: 1rem 1.5rem;
+  position: absolute;
+  z-index: 999;
+
+  &:focus {
+    font-weight: 700;
+    left: 50%;
+    opacity: 1;
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+
+    transform: translateX(-50%);
+  }
+}
