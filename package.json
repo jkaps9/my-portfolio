@@ -12,7 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.3.5",
+    "astro": "^6.4.8",
     "astro-icon": "^1.2.0"
   },
   "allowScripts": {

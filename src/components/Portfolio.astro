@@ -3,8 +3,10 @@ import { Picture } from "astro:assets";
 import { Icon } from "astro-icon/components";
 
 import weatherApplicationImg from "@assets/images/portfolio/weather-application_screenshot.png";
+import devHorizonImg from "@assets/images/portfolio/devhorizon_screenshot.png";
 import officeLiteImg from "@assets/images/portfolio/officelite_screenshot.png";
 import equalizerImg from "@assets/images/portfolio/equalizer_screenshot.png";
+import placeholderImg from "@assets/images/portfolio/placeholder_screenshot.png";
 
 const projects = [
   {
@@ -14,6 +16,13 @@ const projects = [
     description:
       "A user-friendly weather application with an intuitive interface that provides essential weather information in a minimilast format.",
     url: "https://weatheryourway.netlify.app/",
+  },
+  {
+   image: devHorizonImg,
+   imageAltText:"tech conference website screenshot",
+   title:"DevHorizon",
+   description:"An informational site for a technology conference.",
+   url:"https://devhorizon26.netlify.app/"
   },
   {
     image: officeLiteImg,
@@ -40,8 +49,12 @@ const projects = [
       {
         projects.map((project) => (
           <div class="project__card">
-            <div class="project__screenshot">
-              <Picture src={project.image} alt={project.imageAltText} />
+        <div class="project__screenshot">
+          {project.image ? 
+          (<Picture src={project.image} alt={project.imageAltText} />)
+          :
+          (<Picture src={placeholderImg} alt="portfolio piece screenshot" />)
+          }
             </div>
             <div class="content">
               <h3 class="project__title">{project.title}</h3>
