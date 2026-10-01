@@ -3,7 +3,8 @@
   --eggshell: #f4f1deff;
   --burnt-peach: #e07a5fff;
   --twilight-indigo: #3d405bff;
-  --twilight-indigo-dark: #0c0d12;
+  --twilight-indigo-dark: #181a24;
+  --twilight-indigo-very-dark: #0c0d12;
   --twilight-indigo-light: #d8d9de;
   --muted-teal: #81b29aff;
   --apricot-cream: #f2cc8fff;
@@ -69,7 +70,7 @@
   --color-text: var(--twilight-indigo-light);
   --color-text-header: #ffffff;
   --color-border: #313349;
-  --color-surface: #000000;
+  --color-surface: var(--twilight-indigo-very-dark);
 
   --shadow-sm: 0 1px 4px rgba(255, 255, 255 0.08);
   --shadow-md: 0 4px 16px rgba(255, 255, 255 0.1);

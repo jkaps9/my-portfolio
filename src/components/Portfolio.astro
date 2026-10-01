@@ -5,7 +5,7 @@ import { Icon } from "astro-icon/components";
 import weatherApplicationImg from "@assets/images/portfolio/weather-application_screenshot.png";
 import devHorizonImg from "@assets/images/portfolio/devhorizon_screenshot.png";
 import officeLiteImg from "@assets/images/portfolio/officelite_screenshot.png";
-import equalizerImg from "@assets/images/portfolio/equalizer_screenshot.png";
+import fxCheckerImg from "@assets/images/portfolio/fx-checker_desktop_screenshot.png";
 import placeholderImg from "@assets/images/portfolio/placeholder_screenshot.png";
 
 const projects = [
@@ -25,19 +25,11 @@ const projects = [
     url: "https://devhorizon26.netlify.app/",
   },
   {
-    image: officeLiteImg,
-    imageAltText: "officelite screenshot",
-    title: "OfficeLite",
-    description: "Website for an upcoming software release",
-    url: "https://jkaps9.github.io/officelite-coming-soon/",
-  },
-  {
-    image: equalizerImg,
-    imageAltText: "equalizer screenshot",
-    title: "Equalizer",
-    description:
-      "Landing page for a system audio equalizer mobile application.",
-    url: "https://jkaps9.github.io/equalizer-landing-page/",
+    image: fxCheckerImg,
+    imageAltText: "fx checker screenshot",
+    title: "FX Checker",
+    description: "A web application to check currency conversion rates.",
+    url: "https://jkaps9.github.io/fx-checker",
   },
 ];
 ---
@@ -90,6 +82,7 @@ const projects = [
 <style>
   .project__card {
     background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-sm);
     display: flex;
