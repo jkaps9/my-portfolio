@@ -1,3 +1,7 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <section id="contact">
   <div class="container">
     <h2>Contact Me</h2>
@@ -24,10 +28,7 @@
       />
       <div class="success-message">
         <div class="title">
-          <img
-            src="assets/images/icon-success-check.svg"
-            alt=""
-          />
+          <Icon name="icon-success-check" />
           <h2>Message Sent!</h2>
         </div>
         <p>Thanks for completing the form. We'll be in touch soon!</p>
@@ -81,21 +82,39 @@
 </section>
 
 <script>
-  const form = document.getElementById("contact-form");
-  const successMessage = document.querySelector(".success-message");
-  form.addEventListener("submit", function (e) {
+  const form = document.getElementById(
+    "contact-form",
+  ) as HTMLFormElement | null;
+  const successMessage = document.querySelector(
+    ".success-message",
+  ) as HTMLElement | null;
+
+  form?.addEventListener("submit", function (e: SubmitEvent) {
     e.preventDefault();
-    const formData = new FormData(this);
+
+    const target = e.currentTarget;
+    if (!(target instanceof HTMLFormElement)) return;
+
+    const formData = new FormData(target);
+    const searchParams = new URLSearchParams();
+
+    for (const [key, value] of formData.entries()) {
+      searchParams.append(
+        key,
+        value instanceof File ? value.name : value.toString(),
+      );
+    }
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+      body: searchParams.toString(),
     })
       .then(() => {
         console.log("Form successfully submitted");
-        successMessage.classList.add("visible");
-        form.reset();
-        setTimeout(() => successMessage.classList.remove("visible"), 5000);
+        successMessage?.classList.add("visible");
+        target.reset();
+        setTimeout(() => successMessage?.classList.remove("visible"), 5000);
       })
       .catch((error) => alert(error));
   });
