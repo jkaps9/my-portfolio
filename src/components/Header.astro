@@ -4,7 +4,16 @@ import ThemeToggle from "./ThemeToggle.astro";
 
 <header>
   <div class="container">
-    <span>Josh Kaplan</span>
+    <nav>
+      <ul class="nav__list">
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <ThemeToggle />
   </div>
 </header>
@@ -17,7 +26,14 @@ import ThemeToggle from "./ThemeToggle.astro";
     .container {
       align-items: center;
       display: flex;
-      justify-content: space-between;
+      gap: 2rem;
+      justify-content: flex-end;
+    }
+
+    .nav__list {
+      align-items: center;
+      display: flex;
+      gap: 1rem;
     }
   }
 </style>
