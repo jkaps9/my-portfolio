@@ -4,7 +4,6 @@ import { Icon } from "astro-icon/components";
 
 import weatherApplicationImg from "@assets/images/portfolio/weather-application_screenshot.png";
 import devHorizonImg from "@assets/images/portfolio/devhorizon_screenshot.png";
-import officeLiteImg from "@assets/images/portfolio/officelite_screenshot.png";
 import fxCheckerImg from "@assets/images/portfolio/fx-checker_desktop_screenshot.png";
 import placeholderImg from "@assets/images/portfolio/placeholder_screenshot.png";
 
@@ -53,6 +52,7 @@ const projects = [
               <Picture
                 src={placeholderImg}
                 alt="portfolio piece screenshot"
+                width={800}
               />
             )}
           </div>
@@ -81,16 +81,17 @@ const projects = [
 
 <style>
   .project__card {
-    background-color: var(--color-surface);
+    background-color: var(--color-surfac2re);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-sm);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 360px;
+    max-width: 720px;
     overflow: hidden;
     transition: all var(--transition);
+    width: 100%;
 
     .project__link {
       align-items: center;
@@ -118,7 +119,7 @@ const projects = [
     }
 
     .project__screenshot img {
-      max-height: 12rem;
+      max-height: 18rem;
       width: 100%;
       object-fit: cover;
       object-position: top;
@@ -136,7 +137,7 @@ const projects = [
 
   .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     justify-items: center;
     gap: 1rem;
   }
