@@ -6,30 +6,87 @@
   class="hero"
 >
   <div class="container">
-    <h1>
-      Hi, I'm
-      <span class="accent-text">Josh</span>
-    </h1>
-    <p>I am building a better web. One site at a time.</p>
-    <a
-      href="#contact"
-      class="btn btn--solid"
-    >
-      Build With Me
-    </a>
+    <div class="content">
+      <h1>
+        Hi, I'm
+        <span class="accent-text">Josh</span>
+      </h1>
+      <p>I am building a better web. One site at a time.</p>
+      <a
+        href="#contact"
+        class="btn btn--solid"
+      >
+        Build With Me
+      </a>
+    </div>
+    <div class="loader"></div>
   </div>
 </section>
 
 <style>
   #hero {
+    padding-block: clamp(6rem, 4.5915rem + 6.0094vw, 10rem);
+
     .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .content {
       align-items: flex-start;
       display: flex;
       flex-direction: column;
     }
   }
+
   .btn {
     display: block;
     margin-top: 5svh;
+  }
+
+  /* HTML: <div class="loader"></div> */
+  .loader {
+    height: 60px;
+    aspect-ratio: 1;
+    border: 3px solid #524656;
+    position: relative;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #cf4647;
+    animation:
+      l8-0 0.57s infinite alternate linear -0.13s,
+      l8-1 0.35s infinite alternate linear -0.23s;
+  }
+  .loader:after {
+    background: #45ada8;
+    animation:
+      l8-0 0.29s infinite alternate linear -0.11s,
+      l8-1 0.51s infinite alternate linear -0.34s;
+  }
+  @keyframes l8-0 {
+    0%,
+    5% {
+      bottom: 0%;
+    }
+    95%,
+    to {
+      bottom: 80%;
+    }
+  }
+  @keyframes l8-1 {
+    0%,
+    5% {
+      left: 0%;
+    }
+    95%,
+    to {
+      left: 80%;
+    }
   }
 </style>
