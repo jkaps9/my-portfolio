@@ -47,12 +47,12 @@ const projects = [
               <Picture
                 src={project.image}
                 alt={project.imageAltText}
+                width={800}
               />
             ) : (
               <Picture
                 src={placeholderImg}
                 alt="portfolio piece screenshot"
-                width={800}
               />
             )}
           </div>
@@ -91,7 +91,7 @@ const projects = [
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 720px;
+    max-width: 90svw;
     overflow: hidden;
     transition: all var(--transition);
     width: 100%;
@@ -122,9 +122,9 @@ const projects = [
     }
 
     .project__screenshot img {
-      height: 18rem;
+      max-height: 18rem;
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: top;
     }
 
@@ -140,8 +140,22 @@ const projects = [
 
   .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: 1fr;
     justify-items: center;
     gap: clamp(2rem, 0.9437rem + 4.507vw, 5rem);
+  }
+
+  @media (min-width: 48rem) {
+    .project__screenshot img {
+      object-fit: cover;
+    }
+  }
+  @media (min-width: 64rem) {
+    .card-container {
+      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    }
+    .project__card {
+      max-width: 720px;
+    }
   }
 </style>
